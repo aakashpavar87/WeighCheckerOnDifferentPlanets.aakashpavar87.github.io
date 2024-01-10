@@ -8,6 +8,7 @@ function showImageandBMI(mass,planet){
         saturn: 10.44,
         uranus: 8.87,
         neptune: 11.15,
+        venus: 8.87,
         mercury: 3.7, // Include Mercury
         pluto: 0.29, // Include Pluto
         moon: 1.625, // Include Moon
@@ -23,15 +24,15 @@ function showImageandBMI(mass,planet){
 }
 function checkErrors(mass, planet) {
     if (mass === '') {
-        container.innerHTML = `<div class='flex-item'>
+        container.innerHTML = `<div class='flex-item error'>
         <p>Please Enter Mass</p>
         </div>`
     } else if (isNaN(mass)) {
-        container.innerHTML = `<div class='flex-item'>
+        container.innerHTML = `<div class='flex-item error'>
         <p>Please Enter Mass In Numbers</p>
         </div>`
     } else if (planet === 'none') {
-        container.innerHTML = `<div class='flex-item'>
+        container.innerHTML = `<div class='flex-item error'>
         <p>Please Select Planet</p>
         </div>`
     } else{

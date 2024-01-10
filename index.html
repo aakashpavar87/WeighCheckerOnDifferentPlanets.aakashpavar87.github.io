@@ -21,8 +21,9 @@
 			background: rgba(241, 238, 238, 0.53);
 			display: flex;
 			margin: 3vh 10vw;
+      height: 30vw;
+      position: relative;
 		}
-
 		.flex-item p{
 			/* background: rgba(154, 153, 153, 0.719); */
 			background-color: '9A9999B7';
@@ -35,8 +36,9 @@
 			align-items: center;
 		}
 		.image img{
-			height:90%;
-			width: 40%;
+			height:20vw;
+			width: 20vw;
+      margin: 0 2vw;
 		}
 
 		input,
@@ -55,11 +57,32 @@
 			top: 20%;
 			left: 20%;
 		}
-		.description p span{
+		/* .description p span{
 			border-radius: 50%;
 			background: rgba(154, 153, 153, 0.719);
 			padding: 10px;
-		}
+		} */
+    .error p{
+      background: rgba(98, 97, 97, 0.692);
+      position: absolute;
+      padding: 10vh;
+      left: 25%;
+      top: 22%;
+      font-size: 2vw;
+      font-weight: 400;
+    }
+    select{
+      height: 36px;
+    }
+    button{
+      /* padding: 0 15px 0 15px; */
+      padding: 0 2.3400936037441498vh 0 2.3400936037441498vh;
+      /* padding: calc(); */
+      height: 36px;
+    }
+    #weight{
+      /* margin: 3vw 0 0 0; */
+    }
 	</style>
 </head>
 
@@ -76,6 +99,7 @@
 			<option value="Mars">Mars</option>
 			<option value="Moon">Moon</option>
 			<option value="Neptune">Neptune</option>
+			<option value="Jupiter">Jupiter</option>
 			<option value="Uranus">Uranus</option>
 			<option value="Pluto">Pluto</option>
 			<option value="Saturn">Saturn</option>
@@ -96,10 +120,6 @@
 
 
 	</main>
-
-
-
-
 
 	<script src="./scripts/main.js"></script>
 </body>
